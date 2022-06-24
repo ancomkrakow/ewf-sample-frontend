@@ -47,7 +47,10 @@ formEl.addEventListener('submit', async function (e) {
         statusEl.textContent = "";
 
         formEl.reset();
-        alert ("Dziękujemy, dane zostały wysłane!");
+        formEl.style.display = 'none';
+
+        let infoEl = document.querySelector('#info');
+        infoEl.textContent = "Dziękujemy, zgłoszenie zostało wysłane.";
 
     } else {
         // Jeśli błąd dotyczy konkretnego pole w formularzu, to opis pojawia się przy tym polui

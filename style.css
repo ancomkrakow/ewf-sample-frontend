@@ -8,10 +8,9 @@ body {
 form {
 	display: inline-block;
 	text-align: left;
-	padding: 0 1rem;
+	padding: 1rem;
 	border: 1px solid var(--maincolor);
 	border-radius: 0.5rem;
-	margin-top: 1rem;
 }
 
 label {
@@ -49,3 +48,6 @@ input:hover, select:hover {
 	min-height: 1.5rem;
 }
 
+.hidden {
+	display: hidden;
+}
