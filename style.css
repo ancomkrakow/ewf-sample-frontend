@@ -1,0 +1,51 @@
+body {
+	font-family: Bahnschrift, 'Trebuchet MS', sans-serif;
+	overflow-y: scroll;
+	--maincolor: #47aad7;
+	text-align: center;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+	padding: 0 1rem;
+	border: 1px solid var(--maincolor);
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+}
+
+label {
+	display: block;
+}
+
+button, input, select {
+	min-width: 18rem;
+	font-size: 1rem;
+	padding: 0.3rem;
+	margin: 0.2rem 0;
+	border: 1px solid var(--maincolor);
+	border-radius: 0.3rem;
+	font-family: Bahnschrift, 'Trebuchet MS', sans-serif;
+}
+
+input[type=submit] {
+	color: white;
+	background-color: var(--maincolor);
+	cursor: pointer;
+	padding: 0.5rem;
+}
+
+input:hover, select:hover {
+	border: 1px solid black;
+	box-shadow: inset 0 0 0.2rem #333;
+}
+
+.error {
+	color: red;
+}
+
+.form-field .error {
+	font-size: 0.8rem;
+	min-height: 1.5rem;
+}
+

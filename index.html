@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<title>Próbka kodu - Formularz e-WF</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<!-- Import pliku ze stylami -->
+	<link rel="stylesheet" href="style.css">
+ 
+	<!-- Import pliku ze skryptem js - wykonywany po wczytaniu strony -->
+	<script src="skrypt.js" defer></script>
+</head>
+
+<body>
+	<form id="user-form">
+	
+		<h2>Podaj dane</h2>
+
+		<div class="form-field">
+			<label for="first_name">Imię *</label>
+			<input id="first_name" type="text" name="first_name" maxlength=48 class="required">
+			<div class="error"></div>
+		</div>
+
+		<div class="form-field">
+			<label for="last_name">Nazwisko *</label>
+			<input id="last_name" type="text" name="last_name" maxlength=48 class="required">
+			<div class="error"></div>
+		</div>
+
+		<div class="form-field">
+			<label for="email">Adres e-mail *</label>
+			<input id="email" type="email" name="email" maxlength=48 class="required">
+			<div class="error"></div>
+		</div>
+
+		<div class="form-field">
+			<label for="phone">Telefon <small>(format: 123123123)</small></label>
+			<input id="phone" type="text" name="phone" maxlength=11 pattern="[0-9]{9}">
+			<div class="error"></div>
+		</div>
+
+		<div class="form-field">
+			<label for="address">Adres</label>
+			<input id="address" type="text" name="address" maxlength=64>
+			<div class="error"></div>
+		</div>
+
+		<div class="form-field">
+			<label for="education">Wykształcenie *</label>
+			<select id="education" name="education_id" ></select>
+			<div class="error"></div>
+		</div>
+
+		<div class="form-field">
+			<label for="job">Zawód *</label>
+			<select id="job" name="job_id"></select>
+			<div class="error"></div>
+		</div>
+
+		<input type=submit value="Wyślij">
+
+		<div id="status" class="error"></div>
+		<P>
+			* pole wymagane
+		</P>
+	</form>
+	
+</body>
+
+</html>
+
+
+
